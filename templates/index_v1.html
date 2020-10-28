@@ -1,0 +1,50 @@
+<html>
+<head>
+
+<body style = "background: rgb(184, 142, 218)">
+ <h1> House Price Prediction</h1>
+
+ <form action="/predict" method="POST"> 
+ <label for="posted_by">Choose Posted_by:</label>
+      <select name="posted_by" id="posted_by">
+        <option value="1">Builder</option>
+        <option value="2">Dealer</option>
+        <option value="3">Owner</option>
+      </select>
+     <br>
+  <label for="RERA">RERA:</label>
+     <select name="RERA" id="RERA">
+       <option value="1">Yes</option>
+       <option value="2">No</option>
+      </select>
+       <br>
+ <label for="RERA">BHK_NO:</label>
+ <input type = "number" name = "BHK_NO" placeholder = "Enter BHK_NO"/><br>
+ <label for="RERA">Square_Ft:</label>
+ <input type = "number" name = "Square_Ft" placeholder = "Enter Enter Square Feet"/><br>
+ <label for="Ready_to_Move">Choose Ready_to_Move :</label>
+      <select name="Ready_to_Move" id="Ready_to_Move">
+        <option value="1">Yes</option>
+        <option value="2">No</option>
+      </select>
+      <br><br>
+ <label for="RERA">Enter Longtitude:</label>
+ <input type = "number" name = "Longtitude" placeholder = "Enter Longtitude"/><br>
+ <label for="RERA">Enter Latitude:</label>
+ <input type = "number" name = "Latitude" placeholder = "Enter Latitude"/><br>
+ <label for="RERA">Enter BHK_RK:</label>
+ <input type = "number" name = "BHK_RK" placeholder = "Enter BHK_RK"/><br>
+
+ <button type = "submit" name  = "predict">Predict Price </button>
+</form>
+
+</body>
+
+
+</head>
+
+{{prediction_text}}
+
+
+
+</html>
